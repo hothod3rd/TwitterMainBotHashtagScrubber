@@ -1,0 +1,20 @@
+body{
+    background-color: #f1f1f1
+}
+.container {
+    background-color: #FFFFFF;
+    height: 300px;
+    width: 300px;
+    margin: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    box-shadow: #000000
+}
+.box {
+    background-color: #000000;
+    margin-top: 15px;
+}
+.username{
+    color: #608CE2;
+}
