@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
     <title>TESTPAGE</title>
@@ -7,8 +7,9 @@
 <body>
     <ul id="Tweets">
     <?php
-    $pythonoutput = fopen("output.txt", "r") or die ("Unable to open file");
-    while(!feof($pythonoutput)){;
+    $pythonoutput = fopen("output.txt", "r") or die("Unable to open file");
+    while (!feof($pythonoutput)) {
+        ;
         $tweet = fgets($pythonoutput);
         $parts = explode(":", $tweet, 2);
         $userName = explode("@", $parts[0], 2);
