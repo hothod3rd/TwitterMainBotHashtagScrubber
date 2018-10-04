@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TESTPAGE</title>
+    <title>Twitter Bot</title>
     <link rel="stylesheet" href="TBStyleSheet.css">
 </head>
 <body>
