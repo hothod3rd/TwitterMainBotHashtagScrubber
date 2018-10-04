@@ -3,6 +3,7 @@
 <head>
     <title>TESTPAGE</title>
     <link rel="stylesheet" href="app.css">
+    <title>Twitter Bot</title>
 </head>
 <body>
     <ul id="tweets">
