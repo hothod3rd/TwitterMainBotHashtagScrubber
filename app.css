@@ -1,20 +1,27 @@
 body{
-    background-color: #f1f1f1
+    background: #f1f1f1;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+#tweets{
+    list-style: none;
 }
 .container {
-    background-color: #FFFFFF;
-    height: 300px;
-    width: 300px;
-    margin: 60px;
-    margin-top: 10px;
-    margin-left: 10px;
+    background: #FFFFFF;
+    min-height: 100px;
+    width: 460px;
+    margin: 10px 60px;
     text-align: left;
-    box-shadow: #000000
+    box-shadow: #000000;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: .25rem;
 }
 .box {
-    background-color: #000000;
+    background: #000000;
     margin-top: 15px;
 }
 .username{
     color: #608CE2;
+    font-size: 16px; 
 }
