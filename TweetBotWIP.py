@@ -1,7 +1,7 @@
 from twython import TwythonStreamer
 from twython import Twython
 import unicodedata
-from TwitterProjectAuth import(
+from TpAUTH import(
     costmerK,
     costmerSK,
     apiK,
@@ -20,8 +20,8 @@ class MyStreamer(TwythonStreamer):
             splitPt1 = ((str(unicodedata.normalize('NFKD', (data['text'])).encode('ascii','ignore'))).split(":", 1))
             splitPt2 = ((splitPt1[0]).split("@", 1))
             print (str(unicodedata.normalize('NFKD', (data['text'])).encode('ascii','ignore')))
-            if (len(str(splitPt2[1])) >= 15:
-            details = twitter.show_user(screen_name=splitPt2[1])
+            if (len(str(splitPt2[1])) >= 15):
+                details = twitter.show_user(screen_name=splitPt2[1])
             if "https" in splitPt1[1]:
                 imgUrl[0] = splitPt1[1].split("https", 1)
             else:
@@ -49,6 +49,6 @@ twitter = Twython(
     apiSK,
 )
 ##Tells twython what to filter and how to i.e. use channel keys to check statuses and filter out anything that doesnt include #instagramdown
-channel.statuses.filter(track='#NationalPoetryDay')
+channel.statuses.filter(track='#NationalPoetryDay', tweet_mode='extended')
 
 

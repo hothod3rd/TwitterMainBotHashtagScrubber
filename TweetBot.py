@@ -1,6 +1,6 @@
 from twython import TwythonStreamer
 import unicodedata
-from TwitterProjectAuth import(
+from TpAUTH import(
     costmerK,
     costmerSK,
     apiK,
