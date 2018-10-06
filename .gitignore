@@ -104,3 +104,4 @@ venv.bak/
 .mypy_cache/
 TwitterProjectAuth.py
 output.txt
+TpAUTH.py
