@@ -11,10 +11,9 @@
     $pythonoutput = fopen("output.txt", "r") or die("Unable to open file");
     while (!feof($pythonoutput)) {
         $tweet = fgets($pythonoutput);
-        $parts = explode(":", $tweet, 2);
-        $userName = explode("@", $parts[0], 2);
-        $parts[0] = "@".$userName[1];
-        echo "<div class='container'><span class='box'><li class='comment-body'><h5 class='username'>".$parts[0]."</h5>"."<p>".$parts[1]."</p>"."</li></span></div>";
+        $parts = explode("£££", $tweet, 3);
+        $parts[1] = "@".$parts[1];
+        echo "<div class='container'><span class='box'><li class='comment-body'><img src='".$parts[0]."' width=48 height = 48><h5 class='username'>".$parts[1]."</h5>"."<p>".$parts[3]."</p>"."</li></span></div>";
     }
     fclose($pythonoutput);
     ?>
